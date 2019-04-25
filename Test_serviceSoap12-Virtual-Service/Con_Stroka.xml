@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="Con_Stroka" id="bfc1d174-521b-4852-90ff-84a4fe72ce6b" interface="Test_serviceSoap12" operation="Con_Stroka" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bfc1d174-521b-4852-90ff-84a4fe72ce6bfileName">Con_Stroka</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="34303b7e-f4c7-42bb-9487-6c210772cf71" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:Con_StrokaResponse>
+         <!--Optional:-->
+         <ser:Con_StrokaResult>?</ser:Con_StrokaResult>
+      </ser:Con_StrokaResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Con_StrokaResponse"/>
+  </con:response>
+</con:mockOperation>

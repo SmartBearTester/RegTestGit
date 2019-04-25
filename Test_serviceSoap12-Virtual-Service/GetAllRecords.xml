@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="GetAllRecords" id="9b96e57d-e59c-4957-a2b3-4da298bb3287" interface="Test_serviceSoap12" operation="GetAllRecords" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9b96e57d-e59c-4957-a2b3-4da298bb3287fileName">GetAllRecords</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="8bf2f904-69f2-4ad7-9f83-02e0f1ee8d09" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <soap:Header/>
+   <soap:Body>
+      <ser:GetAllRecordsResponse>
+         <!--Optional:-->
+         <ser:GetAllRecordsResult>
+            <xs:schema>
+               <!--Ignoring type [{http://www.w3.org/2001/XMLSchema}schema]-->
+            </xs:schema>
+            <!--You may enter ANY elements at this point-->
+         </ser:GetAllRecordsResult>
+      </ser:GetAllRecordsResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/GetAllRecordsResponse"/>
+  </con:response>
+</con:mockOperation>

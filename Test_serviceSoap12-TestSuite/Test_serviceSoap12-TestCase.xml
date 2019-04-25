@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="00fbe610-d06f-4768-b4b3-ec87869a12eb" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test_serviceSoap12 TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="00fbe610-d06f-4768-b4b3-ec87869a12ebfileName">Test_serviceSoap12-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="e4242cca-484c-4cac-b553-67862a049e13" name="Con_Stroka">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="Con_Stroka" id="4091ef51-ee7c-4701-8721-aaedc7b5b1e5">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Con_Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+         <!--Optional:-->\r
+         <ser:y>?</ser:y>\r
+      </ser:Con_Stroka>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Con_StrokaRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="0769167d-32a2-4095-a0c0-7fbc34ce394c" name="Date">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Date</con:operation>
+      <con:request name="Date" id="391bf364-3a44-4476-89c0-7c7139120fe4">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Date/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/DateRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="268337e2-7b0f-4cc0-ac41-2118918f7559" name="Date_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Date_XML</con:operation>
+      <con:request name="Date_XML" id="db4a3cb9-08eb-49ef-bbca-8b9043d06d70">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Date_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Date_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="ff1d674b-6319-4762-966b-8a23ec1c9220" name="delay_response">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>delay_response</con:operation>
+      <con:request name="delay_response" id="56563b19-0bda-46e8-abbd-6448d6bd232f">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:delay_response>\r
+         <ser:t>?</ser:t>\r
+      </ser:delay_response>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/delay_responseRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="60a948cb-8889-458b-aea8-9d39b2c709c0" name="file_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>file_XML</con:operation>
+      <con:request name="file_XML" id="44d459fe-ddd4-44b6-9a43-7662243e3395">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:file_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/file_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="a5051ce6-8a7d-45db-a598-6c14c13f96d2" name="GetAllRecords">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>GetAllRecords</con:operation>
+      <con:request name="GetAllRecords" id="dd5886a2-d27f-4d94-bea9-704dcc25e04e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:GetAllRecords/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/GetAllRecordsRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="fde78fac-f6d5-435c-97d1-9b4ee80b926d" name="GetAllRecords_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>GetAllRecords_XML</con:operation>
+      <con:request name="GetAllRecords_XML" id="6f685b84-8ec1-40e9-a62b-04644983b507">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:GetAllRecords_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/GetAllRecords_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2023c1bb-6ebd-4792-845b-594f223ddc5e" name="getArrayInt">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>getArrayInt</con:operation>
+      <con:request name="getArrayInt" id="5962eed0-2710-4792-9cdb-24a1cc4fe448">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getArrayInt>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:test>\r
+      </ser:getArrayInt>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayIntRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="e56faa8e-e643-4d94-9a7e-8ae0cd0741bc" name="getArrayString">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>getArrayString</con:operation>
+      <con:request name="getArrayString" id="2065c628-cd4e-45af-8747-b06c5d808d1a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:getArrayString>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:string>?</ser:string>\r
+         </ser:test>\r
+      </ser:getArrayString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/getArrayStringRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="8427b0f8-7a71-4d1e-bfd7-9bd4553f08df" name="HelloWorld">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>HelloWorld</con:operation>
+      <con:request name="HelloWorld" id="7c5ba39b-cb37-4b68-9b20-ea6ba1f43d77">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:HelloWorld/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/HelloWorldRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="c52b16e9-3a44-42d9-bf32-277e024c07c6" name="HelloWorld_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>HelloWorld_XML</con:operation>
+      <con:request name="HelloWorld_XML" id="5b6f155f-9913-4fae-8956-d0b47016216d">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:HelloWorld_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/HelloWorld_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="7050e9f0-d236-41e7-8378-e95dd2f21ce1" name="inheritance_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>inheritance_class</con:operation>
+      <con:request name="inheritance_class" id="64763295-7f6a-40ed-9939-a4d7e4366def">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:inheritance_class>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <ser:field_int>?</ser:field_int>\r
+            <!--Optional:-->\r
+            <ser:field_string>?</ser:field_string>\r
+            <!--Optional:-->\r
+            <ser:field_array>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array>\r
+            <!--Optional:-->\r
+            <ser:field_class_test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:field_class_test>\r
+            <!--Optional:-->\r
+            <ser:field_class_complex_test>\r
+               <!--Optional:-->\r
+               <ser:trans/>\r
+               <!--Optional:-->\r
+               <ser:trans2/>\r
+            </ser:field_class_complex_test>\r
+            <ser:field_int1>?</ser:field_int1>\r
+            <!--Optional:-->\r
+            <ser:field_string1>?</ser:field_string1>\r
+            <!--Optional:-->\r
+            <ser:field_array1>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array1>\r
+         </ser:test>\r
+      </ser:inheritance_class>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/inheritance_classRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="ba2bced3-6a16-425b-8553-fbb59e2e0d5d" name="inheritance_class_super">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>inheritance_class_super</con:operation>
+      <con:request name="inheritance_class_super" id="ff35049b-501d-42e1-8826-cb6ecd71781e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:inheritance_class_super>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <ser:field_int>?</ser:field_int>\r
+            <!--Optional:-->\r
+            <ser:field_string>?</ser:field_string>\r
+            <!--Optional:-->\r
+            <ser:field_array>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array>\r
+            <!--Optional:-->\r
+            <ser:field_class_test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:field_class_test>\r
+            <!--Optional:-->\r
+            <ser:field_class_complex_test>\r
+               <!--Optional:-->\r
+               <ser:trans/>\r
+               <!--Optional:-->\r
+               <ser:trans2/>\r
+            </ser:field_class_complex_test>\r
+            <ser:field_int1>?</ser:field_int1>\r
+            <!--Optional:-->\r
+            <ser:field_string1>?</ser:field_string1>\r
+            <!--Optional:-->\r
+            <ser:field_array1>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array1>\r
+            <!--Optional:-->\r
+            <ser:field_string11>?</ser:field_string11>\r
+         </ser:test>\r
+      </ser:inheritance_class_super>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/inheritance_class_superRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="7dda84f9-ef0b-4804-8ddd-fc082045abac" name="InputDate">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>InputDate</con:operation>
+      <con:request name="InputDate" id="e93920c1-f42a-4467-aac5-26d255262494">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:InputDate>\r
+         <ser:MyInputDate>?</ser:MyInputDate>\r
+      </ser:InputDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/InputDateRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="b11a0a6a-bb5d-4dc4-95b8-43a510f272c9" name="massiv">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>massiv</con:operation>
+      <con:request name="massiv" id="d2a33fc4-abfa-4702-af07-934e89741d87">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:massiv/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/massivRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="ba5763bb-1b7d-4742-848a-ab17f9847969" name="object_in_object">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>object_in_object</con:operation>
+      <con:request name="object_in_object" id="e761dc07-35c2-4320-aa3f-988650dd2d86">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:object_in_object/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/object_in_objectRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="5ff95a11-109c-43fd-804e-51c3ee98a7e3" name="Ran">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Ran</con:operation>
+      <con:request name="Ran" id="e533c5c2-933d-4fe8-9d5c-e020859da4f2">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Ran>\r
+         <ser:x>?</ser:x>\r
+      </ser:Ran>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/RanRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="9e7948fe-d6ef-4db3-a454-096a62811939" name="Ran_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Ran_XML</con:operation>
+      <con:request name="Ran_XML" id="618e5cd8-6169-447e-8702-a216ab05355d">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Ran_XML>\r
+         <ser:x>?</ser:x>\r
+      </ser:Ran_XML>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/Ran_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="b10287db-b090-4e1c-bf37-8e524c60a2f9" name="Stroka">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Stroka</con:operation>
+      <con:request name="Stroka" id="e79e23e2-2404-4ee0-a849-12310a00551a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+      </ser:Stroka>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/StrokaRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="38112b7f-048b-403a-8d4f-9acb49f7f5d0" name="test_bool">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_bool</con:operation>
+      <con:request name="test_bool" id="45b8d4df-059c-4e96-a97c-d2e19bcb4ee3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_bool/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_boolRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="a4f1c57b-2fa3-4d8a-b643-d4a6b2724cf6" name="test_byte">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_byte</con:operation>
+      <con:request name="test_byte" id="b7580b4b-fec3-44cd-a22d-ee8b4576c825">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_byte/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_byteRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="f1d1d4a3-3bca-4467-89ab-0a656fc87406" name="test_char">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_char</con:operation>
+      <con:request name="test_char" id="38832fd7-731c-4157-9080-5c5270a05e5a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_char/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_charRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="66edeffb-a629-4853-83fb-df58def4e038" name="test_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_class</con:operation>
+      <con:request name="test_class" id="01bca5f5-e6fe-4c8a-ba3e-780eaa3d64e1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_classRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="40ec9fd6-fb14-4348-86a5-2ef2ebf61a51" name="test_class_array">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_class_array</con:operation>
+      <con:request name="test_class_array" id="32d7a6b9-a780-4492-bbe5-350b8f4c0860">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_array/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_arrayRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="80ba7294-d161-4669-9d70-831d97acf328" name="test_class_array_input_array">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_class_array_input_array</con:operation>
+      <con:request name="test_class_array_input_array" id="78a235a4-4cf3-442a-9a34-e9e73c15e2d4">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_array_input_array>\r
+         <!--Optional:-->\r
+         <ser:tt>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:tt>\r
+      </ser:test_class_array_input_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_array_input_arrayRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="098dbbe7-c0f7-4044-afa5-fe686cfd3870" name="test_class_transfer_array">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_class_transfer_array</con:operation>
+      <con:request name="test_class_transfer_array" id="d1aaf182-3016-49f5-afac-305b74b7170a">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:test_class_transfer_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_transfer_arrayRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="12777d88-e32a-44a3-b048-587c0080ff12" name="test_complex_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_complex_class</con:operation>
+      <con:request name="test_complex_class" id="ebc66144-398d-43fc-af3d-91f20c1b2683">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_complex_class>\r
+         <!--Optional:-->\r
+         <ser:xx>\r
+            <!--Optional:-->\r
+            <ser:trans/>\r
+            <!--Optional:-->\r
+            <ser:trans2/>\r
+         </ser:xx>\r
+      </ser:test_complex_class>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_complex_classRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="fa3d23eb-357b-414e-bc45-482aad7bebd1" name="test_decimal">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_decimal</con:operation>
+      <con:request name="test_decimal" id="5f4e08cd-9054-451c-9b0c-fb4734121299">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_decimal/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_decimalRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="4e16e18c-85b3-43e5-b68a-ba36a4dc6d13" name="test_double">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_double</con:operation>
+      <con:request name="test_double" id="758b29e3-d99f-469e-b165-e8f49bb2c927">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_double/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_doubleRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2437024c-d565-4a8d-a9b2-57192fefe1ab" name="test_float">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_float</con:operation>
+      <con:request name="test_float" id="9fc7826c-ea31-4082-a51a-cde117e17662">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_float/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_floatRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="c65688f3-65c6-4f01-9ba4-2f4f8d46521a" name="test_int">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_int</con:operation>
+      <con:request name="test_int" id="67ac2e80-a341-4aff-9d6e-91de47e179a3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_int/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_intRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="a5c24dd9-a86f-4a0f-8b98-42bae59bea1b" name="test_long">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_long</con:operation>
+      <con:request name="test_long" id="73e53a8a-b7e3-487f-8c76-ec30cc634b16">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_long/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_longRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="f568c1a0-43e7-4ed8-b736-aaab4e0ed4f9" name="test_Sbyte">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_Sbyte</con:operation>
+      <con:request name="test_Sbyte" id="9a273ab4-5754-498b-9386-f80897c6d448">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_Sbyte/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_SbyteRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="a483369b-b329-44aa-a13e-8bbb6695a82e" name="test_short">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_short</con:operation>
+      <con:request name="test_short" id="28e14d89-f913-4b83-bc87-fa6a5f372417">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_short/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_shortRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="51f1f11c-9bab-4c12-8236-195771094224" name="test_string">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_string</con:operation>
+      <con:request name="test_string" id="625be8a0-f0ad-4cd4-a2ac-ce755db4a15b">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_string/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_stringRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="f227248c-4655-4803-a96a-d5b7327db8de" name="test_uint">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_uint</con:operation>
+      <con:request name="test_uint" id="2a93ba10-e11f-49db-a101-defadff32c97">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_uint/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_uintRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="0a430b4a-23d3-4693-a9a7-f70923b8e242" name="test_ulong">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_ulong</con:operation>
+      <con:request name="test_ulong" id="7c2b3bc5-fd8a-4b5a-8863-f60e69b5162e">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_ulong/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_ulongRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="5cba9e65-3903-4577-a1c7-6c278aa9958e" name="test_ushort">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>test_ushort</con:operation>
+      <con:request name="test_ushort" id="5fc2411e-2d67-4ba4-8cff-2dea1efbe3f4">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_ushort/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_ushortRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="a85d6680-8d8f-4bc7-b7bf-15f9ef3d19ea" name="TestClassArray_2InputArray">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>TestClassArray_2InputArray</con:operation>
+      <con:request name="TestClassArray_2InputArray" id="e70da2e4-4534-4200-9659-33804cf71db8">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:TestClassArray_2InputArray>\r
+         <!--Optional:-->\r
+         <ser:TCAI1>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:TCAI1>\r
+         <!--Optional:-->\r
+         <ser:TCAI2>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:TCAI2>\r
+      </ser:TestClassArray_2InputArray>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/TestClassArray_2InputArrayRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="f41c0982-2ed6-4535-8102-edc343a28922" name="transfer_array">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>transfer_array</con:operation>
+      <con:request name="transfer_array" id="acc8fd71-4a8c-4f64-ae0c-2ec32b94799f">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:transfer_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_arrayRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="662c48ce-4e44-4e40-9494-f08dee729029" name="transfer_XML">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>transfer_XML</con:operation>
+      <con:request name="transfer_XML" id="223dd72f-89f7-4943-8327-a79c2efd07ed">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:transfer_XML>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            e\r
+            <!--You may enter ANY elements at this point-->\r
+            gero\r
+         </ser:x>\r
+      </ser:transfer_XML>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_XMLRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="1bb974ef-0abc-457c-baf9-e03c37da5dfc" name="Vse">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap12</con:interface>
+      <con:operation>Vse</con:operation>
+      <con:request name="Vse" id="c0774030-7ab9-4ede-933c-ca1f6dd5679c">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Vse>\r
+         <ser:x>?</ser:x>\r
+         <ser:y>?</ser:y>\r
+         <!--Optional:-->\r
+         <ser:z>?</ser:z>\r
+      </ser:Vse>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/VseRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

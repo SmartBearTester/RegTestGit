@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/inheritanceClassSuper" method="POST" resourcePath="/WCFREST/Service.svc/inheritanceClassSuper" id="aafa8f4f-5a78-44cd-b084-43778ee4ee17" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aafa8f4f-5a78-44cd-b084-43778ee4ee17fileName">%2FWCFREST%2FService.svc%2FinheritanceClassSuper</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="26c3a0cc-8e63-4ef6-8b90-2d9e2c484e53" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

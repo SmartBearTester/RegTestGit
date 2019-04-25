@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_ulong" id="f7d24b8d-be95-402a-b282-db4748176c90" interface="Test_serviceSoap" operation="test_ulong" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f7d24b8d-be95-402a-b282-db4748176c90fileName">test_ulong</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="e94d4ac9-f7b5-45ce-b9fe-6c0b4ce04913" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:test_ulongResponse>
+         <ser:test_ulongResult>?</ser:test_ulongResult>
+      </ser:test_ulongResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_ulong"/>
+  </con:response>
+</con:mockOperation>

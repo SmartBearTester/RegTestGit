@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="transfer_array" id="0c5f594c-1d17-45a9-b52b-4e1999176e07" interface="Test_serviceSoap" operation="transfer_array" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0c5f594c-1d17-45a9-b52b-4e1999176e07fileName">transfer_array</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="89b2295b-9540-46cf-84a2-b156a972b935" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:transfer_arrayResponse>
+         <!--Optional:-->
+         <ser:transfer_arrayResult>?</ser:transfer_arrayResult>
+      </ser:transfer_arrayResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/transfer_array"/>
+  </con:response>
+</con:mockOperation>

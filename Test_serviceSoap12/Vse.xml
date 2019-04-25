@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="cabea5a5-c1da-4496-97c5-a45bf4c58ce7" isOneWay="false" action="http://localhost/test_service/Service1.asmx/Vse" name="Vse" bindingOperationName="Vse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cabea5a5-c1da-4496-97c5-a45bf4c58ce7fileName">Vse</con:setting>
+  </con:settings>
+  <con:call id="f0819bbb-d4c4-479f-abe2-d90e45d0aa18" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:Vse>\r
+         <ser:x>?</ser:x>\r
+         <ser:y>?</ser:y>\r
+         <!--Optional:-->\r
+         <ser:z>?</ser:z>\r
+      </ser:Vse>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/VseRequest"/>
+  </con:call>
+</con:operation>

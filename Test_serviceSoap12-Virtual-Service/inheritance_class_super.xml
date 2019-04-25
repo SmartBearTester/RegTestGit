@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="inheritance_class_super" id="4cba0bb2-26f5-446a-8834-df0e792a5542" interface="Test_serviceSoap12" operation="inheritance_class_super" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4cba0bb2-26f5-446a-8834-df0e792a5542fileName">inheritance_class_super</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="5a782084-8b6c-4e99-bf32-38d0aab2656b" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:inheritance_class_superResponse>
+         <!--Optional:-->
+         <ser:inheritance_class_superResult>
+            <ser:field_int>?</ser:field_int>
+            <!--Optional:-->
+            <ser:field_string>?</ser:field_string>
+            <!--Optional:-->
+            <ser:field_array>
+               <!--Zero or more repetitions:-->
+               <ser:int>?</ser:int>
+            </ser:field_array>
+            <!--Optional:-->
+            <ser:field_class_test>
+               <ser:test_int>?</ser:test_int>
+               <!--Optional:-->
+               <ser:test_string>?</ser:test_string>
+               <!--Optional:-->
+               <ser:test_transfer_array>?</ser:test_transfer_array>
+               <!--Optional:-->
+               <ser:test_array>
+                  <!--Zero or more repetitions:-->
+                  <ser:int>?</ser:int>
+               </ser:test_array>
+            </ser:field_class_test>
+            <!--Optional:-->
+            <ser:field_class_complex_test>
+               <!--Optional:-->
+               <ser:trans/>
+               <!--Optional:-->
+               <ser:trans2/>
+            </ser:field_class_complex_test>
+            <ser:field_int1>?</ser:field_int1>
+            <!--Optional:-->
+            <ser:field_string1>?</ser:field_string1>
+            <!--Optional:-->
+            <ser:field_array1>
+               <!--Zero or more repetitions:-->
+               <ser:int>?</ser:int>
+            </ser:field_array1>
+            <!--Optional:-->
+            <ser:field_string11>?</ser:field_string11>
+         </ser:inheritance_class_superResult>
+      </ser:inheritance_class_superResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/inheritance_class_superResponse"/>
+  </con:response>
+</con:mockOperation>

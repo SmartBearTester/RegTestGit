@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_complex_class" id="4bee6879-1b33-4a80-b9c4-3822464fc711" interface="Test_serviceSoap" operation="test_complex_class" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4bee6879-1b33-4a80-b9c4-3822464fc711fileName">test_complex_class</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="511eefd5-bd91-4386-92fc-a994cf0519d0" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:test_complex_classResponse>
+         <!--Optional:-->
+         <ser:test_complex_classResult>
+            <!--Optional:-->
+            <ser:trans/>
+            <!--Optional:-->
+            <ser:trans2/>
+         </ser:test_complex_classResult>
+      </ser:test_complex_classResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_complex_class"/>
+  </con:response>
+</con:mockOperation>

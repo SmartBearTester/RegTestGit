@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="delay_response" id="b7481be3-8fc5-4173-b54e-6f9b91fcfe61" interface="Test_serviceSoap" operation="delay_response" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b7481be3-8fc5-4173-b54e-6f9b91fcfe61fileName">delay_response</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="cde49d22-27b8-4670-b7ed-a9a2bef26da3" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:delay_responseResponse>
+         <!--Optional:-->
+         <ser:delay_responseResult>?</ser:delay_responseResult>
+      </ser:delay_responseResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/delay_response"/>
+  </con:response>
+</con:mockOperation>

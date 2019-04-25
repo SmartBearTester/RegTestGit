@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="Date" id="7003344c-f632-4736-ab17-adefd19cbd22" interface="Test_serviceSoap12" operation="Date" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7003344c-f632-4736-ab17-adefd19cbd22fileName">Date</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="e4952068-6b7a-40c7-8548-00280ec639ff" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:DateResponse>
+         <ser:DateResult>?</ser:DateResult>
+      </ser:DateResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/DateResponse"/>
+  </con:response>
+</con:mockOperation>

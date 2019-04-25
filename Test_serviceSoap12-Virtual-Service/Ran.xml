@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="Ran" id="a358ed1f-7d07-4557-8804-d51bea0c6b0f" interface="Test_serviceSoap12" operation="Ran" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a358ed1f-7d07-4557-8804-d51bea0c6b0ffileName">Ran</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="e186d9f6-9a87-4b70-a59d-f7f4fbdffe0f" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:RanResponse>
+         <ser:RanResult>?</ser:RanResult>
+      </ser:RanResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/RanResponse"/>
+  </con:response>
+</con:mockOperation>

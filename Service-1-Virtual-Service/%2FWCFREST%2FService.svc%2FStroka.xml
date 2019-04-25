@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/Stroka" method="GET" resourcePath="/WCFREST/Service.svc/Stroka" id="e6587606-3877-4dd8-9feb-40d59a45b7ce" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e6587606-3877-4dd8-9feb-40d59a45b7cefileName">%2FWCFREST%2FService.svc%2FStroka</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="c80d3fdd-e431-492e-bfa4-6b25838e3a9f" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

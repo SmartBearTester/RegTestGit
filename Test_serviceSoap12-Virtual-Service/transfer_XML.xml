@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="transfer_XML" id="5933a2ec-feb0-460a-a42f-4dab5fc6702c" interface="Test_serviceSoap12" operation="transfer_XML" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5933a2ec-feb0-460a-a42f-4dab5fc6702cfileName">transfer_XML</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="742c4b73-e02e-4d34-a983-a854a7c2a588" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer_XMLResponse>
+         <!--Optional:-->
+         <ser:transfer_XMLResult>
+            e
+            <!--You may enter ANY elements at this point-->
+            gero
+         </ser:transfer_XMLResult>
+      </ser:transfer_XMLResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/transfer_XMLResponse"/>
+  </con:response>
+</con:mockOperation>

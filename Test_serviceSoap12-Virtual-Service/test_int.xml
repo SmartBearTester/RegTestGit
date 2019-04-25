@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_int" id="507f07c0-5f5f-42c3-ac4c-3b203f7f1afc" interface="Test_serviceSoap12" operation="test_int" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="507f07c0-5f5f-42c3-ac4c-3b203f7f1afcfileName">test_int</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="bc01ea7d-df88-49cc-adc9-94b7aaa8bd5c" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:test_intResponse>
+         <ser:test_intResult>?</ser:test_intResult>
+      </ser:test_intResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_intResponse"/>
+  </con:response>
+</con:mockOperation>

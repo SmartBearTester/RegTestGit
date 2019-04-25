@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/delayResponse" method="GET" resourcePath="/WCFREST/Service.svc/delayResponse" id="4b958ace-63be-439c-8d4c-e627bb57d637" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4b958ace-63be-439c-8d4c-e627bb57d637fileName">%2FWCFREST%2FService.svc%2FdelayResponse</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="17a6022e-b384-48ee-8763-01d6b2d490f0" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

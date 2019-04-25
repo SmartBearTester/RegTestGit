@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="Vse" id="2d539077-8918-4739-9c88-6496e2ecfd74" interface="Test_serviceSoap" operation="Vse" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2d539077-8918-4739-9c88-6496e2ecfd74fileName">Vse</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="44a3138c-22cf-43a6-aacb-9f35bcdcb4ea" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:VseResponse>
+         <ser:VseResult>?</ser:VseResult>
+      </ser:VseResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Vse"/>
+  </con:response>
+</con:mockOperation>

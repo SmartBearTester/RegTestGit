@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="be609ff7-36dc-4e79-8d7a-0287c3b7aff9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Vse TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="be609ff7-36dc-4e79-8d7a-0287c3b7aff9fileName">Vse-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="9bea2e0d-8a9b-4df8-a403-e45eac51d49d" name="Vse">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Vse</con:operation>
+      <con:request name="Vse" id="54d16003-4abd-44dd-ae20-75391ce2d972">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Vse>\r
+         <ser:x>?</ser:x>\r
+         <ser:y>?</ser:y>\r
+         <!--Optional:-->\r
+         <ser:z>?</ser:z>\r
+      </ser:Vse>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Vse"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="massiv" id="5145be65-4cc2-49c6-bff8-f67c6a82cfa0" interface="Test_serviceSoap12" operation="massiv" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5145be65-4cc2-49c6-bff8-f67c6a82cfa0fileName">massiv</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="52b47e24-9216-4162-87a2-e8900458582f" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:massivResponse>
+         <!--Optional:-->
+         <ser:massivResult>
+            <!--Zero or more repetitions:-->
+            <ser:int>?</ser:int>
+         </ser:massivResult>
+      </ser:massivResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/massivResponse"/>
+  </con:response>
+</con:mockOperation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="getArrayInt" id="5c9b546b-c59f-4c62-969b-b3ee4ea71707" interface="Test_serviceSoap" operation="getArrayInt" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5c9b546b-c59f-4c62-969b-b3ee4ea71707fileName">getArrayInt</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="c4c79b78-1ce6-44e6-b2ab-d77d08c3133f" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getArrayIntResponse>
+         <!--Optional:-->
+         <ser:getArrayIntResult>
+            <!--Zero or more repetitions:-->
+            <ser:int>?</ser:int>
+         </ser:getArrayIntResult>
+      </ser:getArrayIntResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayInt"/>
+  </con:response>
+</con:mockOperation>

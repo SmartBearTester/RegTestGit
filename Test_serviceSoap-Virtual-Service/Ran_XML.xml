@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="Ran_XML" id="ab379d11-e586-48c7-92af-cdc7e7b338d4" interface="Test_serviceSoap" operation="Ran_XML" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ab379d11-e586-48c7-92af-cdc7e7b338d4fileName">Ran_XML</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="e4b4dfd8-00eb-41a7-8b4c-afb9e0370a2f" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Ran_XMLResponse>
+         <!--Optional:-->
+         <ser:Ran_XMLResult>
+            e
+            <!--You may enter ANY elements at this point-->
+            gero
+         </ser:Ran_XMLResult>
+      </ser:Ran_XMLResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Ran_XML"/>
+  </con:response>
+</con:mockOperation>

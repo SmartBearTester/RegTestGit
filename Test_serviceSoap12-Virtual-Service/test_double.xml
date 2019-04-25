@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_double" id="2f6eb79d-9884-4c70-89df-8e5aa2ea6819" interface="Test_serviceSoap12" operation="test_double" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f6eb79d-9884-4c70-89df-8e5aa2ea6819fileName">test_double</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="1050d82e-5bb4-4b85-a483-ec3af1e588f1" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:test_doubleResponse>
+         <ser:test_doubleResult>?</ser:test_doubleResult>
+      </ser:test_doubleResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_doubleResponse"/>
+  </con:response>
+</con:mockOperation>

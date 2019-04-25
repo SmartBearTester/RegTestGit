@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/testSbyte" method="GET" resourcePath="/WCFREST/Service.svc/testSbyte" id="abd8ac59-52b6-415f-b217-db1fbca3f9bb" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="abd8ac59-52b6-415f-b217-db1fbca3f9bbfileName">%2FWCFREST%2FService.svc%2FtestSbyte</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="806ab4d6-ffd9-4b6b-85b0-c5bfef232ab8" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

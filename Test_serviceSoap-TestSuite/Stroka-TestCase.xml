@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="871a984c-2fc1-4130-969f-74aaa71cda31" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Stroka TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="871a984c-2fc1-4130-969f-74aaa71cda31fileName">Stroka-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="304fc5a6-29ec-4922-ade4-e2975060dac3" name="Stroka">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Stroka</con:operation>
+      <con:request name="Stroka" id="3b55b7f1-33b0-4b8d-9d53-8c1d998aca0d">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+      </ser:Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Stroka"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

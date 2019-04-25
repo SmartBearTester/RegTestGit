@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_class" id="3c690e73-402f-4537-b908-600337aa575c" interface="Test_serviceSoap" operation="test_class" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3c690e73-402f-4537-b908-600337aa575cfileName">test_class</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="94f54283-588b-4644-96c6-1be866966d81" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:test_classResponse>
+         <!--Optional:-->
+         <ser:test_classResult>
+            <ser:test_int>?</ser:test_int>
+            <!--Optional:-->
+            <ser:test_string>?</ser:test_string>
+            <!--Optional:-->
+            <ser:test_transfer_array>?</ser:test_transfer_array>
+            <!--Optional:-->
+            <ser:test_array>
+               <!--Zero or more repetitions:-->
+               <ser:int>?</ser:int>
+            </ser:test_array>
+         </ser:test_classResult>
+      </ser:test_classResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_class"/>
+  </con:response>
+</con:mockOperation>

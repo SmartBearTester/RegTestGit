@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_Sbyte" id="983465b6-65c2-410d-83b1-b9967d716895" interface="Test_serviceSoap12" operation="test_Sbyte" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="983465b6-65c2-410d-83b1-b9967d716895fileName">test_Sbyte</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="0e9063ef-4d55-4612-ada0-537748cd5223" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:test_SbyteResponse>
+         <ser:test_SbyteResult>?</ser:test_SbyteResult>
+      </ser:test_SbyteResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_SbyteResponse"/>
+  </con:response>
+</con:mockOperation>

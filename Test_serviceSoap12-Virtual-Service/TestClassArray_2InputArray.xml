@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="TestClassArray_2InputArray" id="ee5fd25f-37f4-4869-bdbf-6115ad8c9c99" interface="Test_serviceSoap12" operation="TestClassArray_2InputArray" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ee5fd25f-37f4-4869-bdbf-6115ad8c9c99fileName">TestClassArray_2InputArray</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="9875acce-47bf-4ad7-bd81-a4732e27adac" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:TestClassArray_2InputArrayResponse>
+         <ser:TestClassArray_2InputArrayResult>
+            <!--Optional:-->
+            <ser:TCAI1>
+               <!--Zero or more repetitions:-->
+               <ser:test>
+                  <ser:test_int>?</ser:test_int>
+                  <!--Optional:-->
+                  <ser:test_string>?</ser:test_string>
+                  <!--Optional:-->
+                  <ser:test_transfer_array>?</ser:test_transfer_array>
+                  <!--Optional:-->
+                  <ser:test_array>
+                     <!--Zero or more repetitions:-->
+                     <ser:int>?</ser:int>
+                  </ser:test_array>
+               </ser:test>
+            </ser:TCAI1>
+            <!--Optional:-->
+            <ser:TCAI2>
+               <!--Zero or more repetitions:-->
+               <ser:test>
+                  <ser:test_int>?</ser:test_int>
+                  <!--Optional:-->
+                  <ser:test_string>?</ser:test_string>
+                  <!--Optional:-->
+                  <ser:test_transfer_array>?</ser:test_transfer_array>
+                  <!--Optional:-->
+                  <ser:test_array>
+                     <!--Zero or more repetitions:-->
+                     <ser:int>?</ser:int>
+                  </ser:test_array>
+               </ser:test>
+            </ser:TCAI2>
+         </ser:TestClassArray_2InputArrayResult>
+      </ser:TestClassArray_2InputArrayResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/TestClassArray_2InputArrayResponse"/>
+  </con:response>
+</con:mockOperation>

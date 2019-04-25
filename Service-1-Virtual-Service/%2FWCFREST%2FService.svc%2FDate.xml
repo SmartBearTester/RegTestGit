@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/Date" method="GET" resourcePath="/WCFREST/Service.svc/Date" id="debce602-7d24-4f5e-a015-f68eed9bbc6a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="debce602-7d24-4f5e-a015-f68eed9bbc6afileName">%2FWCFREST%2FService.svc%2FDate</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="17078d04-36b0-484b-998f-90296d204f58" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

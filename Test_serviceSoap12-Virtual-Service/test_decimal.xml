@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_decimal" id="c246beb3-84ae-489f-9758-b9923ee68f95" interface="Test_serviceSoap12" operation="test_decimal" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c246beb3-84ae-489f-9758-b9923ee68f95fileName">test_decimal</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="7f10b15d-33eb-45cf-804b-3ee1d23d83fc" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:test_decimalResponse>
+         <ser:test_decimalResult>?</ser:test_decimalResult>
+      </ser:test_decimalResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_decimalResponse"/>
+  </con:response>
+</con:mockOperation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="object_in_object" id="eaa3c31e-23d8-406a-bbae-c0a1aa81a21b" interface="Test_serviceSoap12" operation="object_in_object" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="eaa3c31e-23d8-406a-bbae-c0a1aa81a21bfileName">object_in_object</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="386ca5eb-e7ac-4179-aa13-46c668b1fa31" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:object_in_objectResponse>
+         <!--Optional:-->
+         <ser:object_in_objectResult>
+            <!--Zero or more repetitions:-->
+            <ser:anyType>?</ser:anyType>
+         </ser:object_in_objectResult>
+      </ser:object_in_objectResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/object_in_objectResponse"/>
+  </con:response>
+</con:mockOperation>

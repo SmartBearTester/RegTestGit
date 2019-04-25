@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="9b76422c-b994-4fa7-a548-599a6118ebad" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="getArrayString TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9b76422c-b994-4fa7-a548-599a6118ebadfileName">getArrayString-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="19ad744a-f649-4f22-8118-a654711df7fd" name="getArrayString">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>getArrayString</con:operation>
+      <con:request name="getArrayString" id="b4fe9e9a-6de6-4661-85c0-5f0503406220">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getArrayString>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:string>?</ser:string>\r
+         </ser:test>\r
+      </ser:getArrayString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/getArrayString"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

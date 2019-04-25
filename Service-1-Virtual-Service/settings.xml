@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService id="b0d1aad7-259a-4108-895b-2aa22fd2e053" port="8090" path="/" host="localhost" name="Service 1 Virtual Service" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b0d1aad7-259a-4108-895b-2aa22fd2e053fileName">Service-1-Virtual-Service</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:headerValidator type="NONE"/>
+</con:restMockService>

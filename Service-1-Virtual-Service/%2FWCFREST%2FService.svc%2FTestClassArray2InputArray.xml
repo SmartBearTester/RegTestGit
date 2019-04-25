@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/TestClassArray2InputArray" method="POST" resourcePath="/WCFREST/Service.svc/TestClassArray2InputArray" id="5584dbda-91a1-4298-b4a5-081ceabd9c27" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5584dbda-91a1-4298-b4a5-081ceabd9c27fileName">%2FWCFREST%2FService.svc%2FTestClassArray2InputArray</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="7d3f94c1-85f5-4ce0-a850-0d2f677ed592" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="GetAllRecords_XML" id="88eb61fb-5d52-48bd-9685-22726af8b68e" interface="Test_serviceSoap" operation="GetAllRecords_XML" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="88eb61fb-5d52-48bd-9685-22726af8b68efileName">GetAllRecords_XML</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="98d460bc-ebfe-4ce7-8ecd-6d25fca04a06" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:GetAllRecords_XMLResponse>
+         <!--Optional:-->
+         <ser:GetAllRecords_XMLResult>
+            e
+            <!--You may enter ANY elements at this point-->
+            gero
+         </ser:GetAllRecords_XMLResult>
+      </ser:GetAllRecords_XMLResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML"/>
+  </con:response>
+</con:mockOperation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f13e5e3d-2e8c-4450-9354-d4419346a8f8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="test_complex_class TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f13e5e3d-2e8c-4450-9354-d4419346a8f8fileName">test_complex_class-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="f1313203-8682-42e6-965a-9cf5d7151442" name="test_complex_class">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>test_complex_class</con:operation>
+      <con:request name="test_complex_class" id="13c51bcc-149b-4b11-81c6-5e683e870281">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_complex_class>\r
+         <!--Optional:-->\r
+         <ser:xx>\r
+            <!--Optional:-->\r
+            <ser:trans/>\r
+            <!--Optional:-->\r
+            <ser:trans2/>\r
+         </ser:xx>\r
+      </ser:test_complex_class>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/test_complex_class"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

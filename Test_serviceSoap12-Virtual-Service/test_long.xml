@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation name="test_long" id="c24abbf6-bb5d-40a2-b175-3c370dea85fa" interface="Test_serviceSoap12" operation="test_long" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c24abbf6-bb5d-40a2-b175-3c370dea85fafileName">test_long</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="77021bd6-e3d2-4518-b3a0-0641c4bd954a" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soap:Header/>
+   <soap:Body>
+      <ser:test_longResponse>
+         <ser:test_longResult>?</ser:test_longResult>
+      </ser:test_longResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_longResponse"/>
+  </con:response>
+</con:mockOperation>
