@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="6f4d1698-0e9e-4629-93c3-f9b84214dd97fileName">Test_serviceSoap-TestSuite</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:runType>SEQUENTIAL</con:runType>
   <con:properties/>
   <con:reportParameters/>
