@@ -4,6 +4,7 @@ Service-1
 Test_serviceSoap-TestSuite
 Test_serviceSoap12-TestSuite
 Service-1-TestSuite
+TestSuite-1
 Test_serviceSoap-Virtual-Service
 Test_serviceSoap12-Virtual-Service
 Service-1-Virtual-Service
