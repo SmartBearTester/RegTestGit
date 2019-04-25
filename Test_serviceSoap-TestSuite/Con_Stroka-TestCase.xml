@@ -2,6 +2,12 @@
 <con:testCase id="683bfd0b-8fa4-411e-907c-a046b50c8887" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Con_Stroka TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="683bfd0b-8fa4-411e-907c-a046b50c8887fileName">Con_Stroka-TestCase</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableAllureReport@Folder">D:\Temp\Reports\</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="request" id="ad0e0541-bb38-4a5c-bd95-2f4e9efff8f8" name="Con_Stroka">
